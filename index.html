@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Talks</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: auto;
+            display: block;
+        }
+        nav{
+            background-color: rgb(238, 238, 87);
+            padding: 1.5rem
+        }
+        nav .site-head{            
+            font-family: cursive;
+            text-align: center;
+            font-size: 200%;
+            
+        }
+        main{
+            max-width: 600px;
+            margin: auto;
+            padding: 1rem;
+            display: block;
+        }
+        div textarea{
+            margin-top: 2rem;
+            display: block;
+            min-height: 20vh;
+            width: 100%;
+            border-style: solid;
+            resize: none;
+        }
+        button{
+            border: none;
+            background-color: rgb(238, 238, 87);
+            margin: 1rem 0rem;
+            padding: 1rem 2rem;
+            font-family: cursive;
+        }
+        footer{
+            background-color: rgb(238, 238, 87);
+            padding: 2rem;
+        }
+        footer div{
+            text-align: center;
+            font-family: cursive;
+        }
+        footer p{
+            text-align: center;
+            font-family: cursive;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav ><div class="site-head">Banana Talks!</div></nav>
+    <main>
+    <div>
+        <p style="font-size: larger; color: rgb(238, 238, 87); font-family: cursive; text-align: center; background-color: black; padding-bottom: 1rem;">Talk in Minion's Language</p>
+        <textarea id="inputText" placeholder="Enter Your Text in English Here..."></textarea>
+    </div>
+    <div>
+        <button id="btn-translate">Translate</button>
+    </div> 
+    <div>
+        <p style="font-size: larger; color: rgb(238, 238, 87); font-family: cursive; text-align: center; background-color: black; padding-bottom: 1rem;">Output will be displayed here 👇🏿</p>
+        <textarea id="outputText"></textarea>
+    </div>
+    </main>
+    <script src="bananatalks.js" type="text/Javascript"></script>
+    <footer>
+            <div>About Us:</div>
+        <p>
+            Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language. 
+        </p>
+    </footer>
+</body>
+</html>
